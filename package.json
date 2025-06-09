@@ -1,0 +1,16 @@
+{
+  "name": "wordpress-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP Server for managing WordPress sites and creating articles",
+  "main": "src/server.py",
+  "scripts": {
+    "start": "python src/server.py",
+    "dev": "python -m uvicorn src.server:app --reload --host 0.0.0.0 --port 8000"
+  },
+  "dependencies": {
+    "python": ">=3.8"
+  },
+  "keywords": ["mcp", "wordpress", "api", "claude"],
+  "author": "Your Name",
+  "license": "MIT"
+} 

@@ -1,0 +1,109 @@
+wordpress_sites:
+  # בלוג אישי
+  - id: "personal_blog"
+    name: "הבלוג האישי שלי"
+    url: "https://myblog.com"
+    username: "admin"
+    password: "xxxx xxxx xxxx xxxx"
+    api_url: "https://myblog.com/wp-json/wp/v2"
+    
+  # אתר עסקי
+  - id: "business_site"
+    name: "אתר העסק"
+    url: "https://mybusiness.com"
+    username: "admin"
+    password: "yyyy yyyy yyyy yyyy"
+    api_url: "https://mybusiness.com/wp-json/wp/v2"
+    
+  # אתר חדשות
+  - id: "news_site"
+    name: "אתר חדשות"
+    url: "https://mynews.com"
+    username: "editor"
+    password: "zzzz zzzz zzzz zzzz"
+    api_url: "https://mynews.com/wp-json/wp/v2"
+    
+  # אתר מוצרים
+  - id: "products_site"
+    name: "קטלוג מוצרים"
+    url: "https://mystore.com"
+    username: "admin"
+    password: "aaaa aaaa aaaa aaaa"
+    api_url: "https://mystore.com/wp-json/wp/v2"
+    
+  # אתר טיפים
+  - id: "tips_site"
+    name: "אתר טיפים ומדריכים"
+    url: "https://mytips.com"
+    username: "author"
+    password: "bbbb bbbb bbbb bbbb"
+    api_url: "https://mytips.com/wp-json/wp/v2"
+    
+  # אתר בריאות
+  - id: "health_site"
+    name: "אתר בריאות ופיטנס"
+    url: "https://myhealth.com"
+    username: "admin"
+    password: "cccc cccc cccc cccc"
+    api_url: "https://myhealth.com/wp-json/wp/v2"
+    
+  # אתר טכנולוגיה
+  - id: "tech_site"
+    name: "אתר טכנולוגיה"
+    url: "https://mytech.com"
+    username: "admin"
+    password: "dddd dddd dddd dddd"
+    api_url: "https://mytech.com/wp-json/wp/v2"
+    
+  # אתר נסיעות
+  - id: "travel_site"
+    name: "אתר נסיעות ותיירות"
+    url: "https://mytravel.com"
+    username: "admin"
+    password: "eeee eeee eeee eeee"
+    api_url: "https://mytravel.com/wp-json/wp/v2"
+    
+  # אתר אוכל
+  - id: "food_site"
+    name: "אתר מתכונים ואוכל"
+    url: "https://myfood.com"
+    username: "chef"
+    password: "ffff ffff ffff ffff"
+    api_url: "https://myfood.com/wp-json/wp/v2"
+    
+  # אתר ספורט
+  - id: "sports_site"
+    name: "אתר ספורט"
+    url: "https://mysports.com"
+    username: "admin"
+    password: "gggg gggg gggg gggg"
+    api_url: "https://mysports.com/wp-json/wp/v2"
+
+  # הוסף כאן את יתר האתרים שלך (עד 70)
+  # פורמט לכל אתר:
+  # - id: "unique_site_id"
+  #   name: "שם האתר"
+  #   url: "https://your-site.com"
+  #   username: "your-username"
+  #   password: "xxxx xxxx xxxx xxxx"  # WordPress Application Password
+  #   api_url: "https://your-site.com/wp-json/wp/v2"
+
+# הגדרות כלליות
+settings:
+  default_post_status: "draft"  # draft, publish, private
+  default_post_format: "standard"
+  max_retries: 3
+  timeout: 30
+  
+  # הגדרות ברירת מחדל לקטגוריות ותגיות
+  default_categories: ["כללי"]
+  auto_create_categories: true
+  auto_create_tags: true
+  
+  # הגדרות SEO
+  auto_generate_excerpt: true
+  excerpt_length: 150  # מספר תווים
+  
+  # הגדרות פרסום
+  publish_delay: 0  # דקות (0 = מיידי)
+  backup_content: true  # גיבוי תוכן לפני פרסום 
