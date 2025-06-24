@@ -36,8 +36,8 @@ A Model Context Protocol (MCP) server that enables AI assistants to manage WordP
 ### 1. Clone and Install
 
 ```bash
-git clone https://github.com/yourusername/wpmcp.git
-cd wpmcp
+git clone https://github.com/yourusername/wordpress-mcp-server.git
+cd wordpress-mcp-server
 pip install -r requirements.txt
 ```
 
@@ -61,6 +61,10 @@ Create a `.env` file:
 OPENAI_API_KEY=your-api-key-here
 ```
 
+**⚠️ Important Note:** If you have an `OPENAI_API_KEY` already set in your Windows/Mac environment variables, it might override the one in `.env`. To avoid conflicts:
+- Remove any existing `OPENAI_API_KEY` from your system environment variables, OR
+- Add the API key directly to Claude Desktop config (see option 2 below)
+
 ### 4. Configure Claude Desktop
 
 Add to Claude's config file:
@@ -75,6 +79,23 @@ Add to Claude's config file:
       "command": "python",
       "args": ["-m", "src.server"],
       "cwd": "C:/path/to/wordpress-mcp-server"
+    }
+  }
+}
+```
+
+**Option 2: Include OpenAI API Key in Claude Config (Recommended if having issues)**
+
+```json
+{
+  "mcpServers": {
+    "wordpress": {
+      "command": "python",
+      "args": ["-m", "src.server"],
+      "cwd": "C:/path/to/wordpress-mcp-server",
+      "env": {
+        "OPENAI_API_KEY": "your-openai-api-key-here"
+      }
     }
   }
 }
@@ -147,6 +168,22 @@ settings:
 
 ## 🐛 Troubleshooting
 
+### Diagnostic Tool
+
+Run the diagnostic script to check your setup:
+
+```bash
+python scripts/diagnose.py
+```
+
+This will check:
+- Python version
+- Required dependencies
+- Configuration files
+- Environment variables
+- OpenAI API key conflicts
+- Connection to OpenAI
+
 ### Common Issues
 
 **"Server disconnected"**
@@ -155,9 +192,11 @@ settings:
 - Check for error messages in terminal
 
 **"Image generation failed"**
-- Verify OpenAI API key
+- Verify OpenAI API key is valid
 - Check API credits
 - Ensure proper .env file format
+- Check if you have conflicting `OPENAI_API_KEY` in system environment variables
+- Try adding the API key directly to Claude Desktop config (see Option 2 above)
 
 **"Authentication failed"**
 - Regenerate WordPress application password
@@ -186,10 +225,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- 📧 Email: shay@seomentor.co.il
+- 📧 Email: your-email@example.com
 - 🐛 Issues: [GitHub Issues](https://github.com/yourusername/wordpress-mcp-server/issues)
 - 💬 Discussions: [GitHub Discussions](https://github.com/yourusername/wordpress-mcp-server/discussions)
 
 ---
 
-Made with ❤️ by shay amos for SEO`s, WordPress developers and AI enthusiasts 
+Made with ❤️ for WordPress developers and AI enthusiasts 
