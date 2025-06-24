@@ -225,10 +225,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- 📧 Email: your-email@example.com
-- 🐛 Issues: [GitHub Issues](https://github.com/yourusername/wordpress-mcp-server/issues)
-- 💬 Discussions: [GitHub Discussions](https://github.com/yourusername/wordpress-mcp-server/discussions)
+- 📧 Email: shay@seomentor.co.il
+- 🐛 Issues: [GitHub Issues](https://github.com/seomentor/wpmcp/issues)
+- 💬 Discussions: [GitHub Discussions](https://github.com/seomentor/wpmcp/discussions)
 
 ---
 
-Made with ❤️ for WordPress developers and AI enthusiasts 
+Made with ❤️ by Shay Amos for WordPress developers, SEO`s and AI enthusiasts 
+
+Visit my website for more cool apps :) https://www.seomentor.co.il 
