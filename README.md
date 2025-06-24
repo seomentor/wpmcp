@@ -36,8 +36,8 @@ A Model Context Protocol (MCP) server that enables AI assistants to manage WordP
 ### 1. Clone and Install
 
 ```bash
-git clone https://github.com/yourusername/wordpress-mcp-server.git
-cd wordpress-mcp-server
+git clone https://github.com/seomentor/wpmcp.git
+cd wpmcp
 pip install -r requirements.txt
 ```
 
