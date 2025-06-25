@@ -12,7 +12,7 @@ sites:
     name: "rox"
     url: "https://www.rox.co.il"
     username: "shay@smgroup.co.il"
-    password: "WCnr AqhL ra0E xxeh b7mm ydt9"  # WordPress Application Password
+    password: "WCnr AqtL ra0E xxeh b7mm ydt9"  # WordPress Application Password
     
   - id: "site2"
     name: "Second Site"
